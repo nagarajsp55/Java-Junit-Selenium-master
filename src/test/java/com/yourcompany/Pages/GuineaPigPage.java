@@ -22,7 +22,7 @@ public class GuineaPigPage {
     private WebElement submitButton;
 
     public WebDriver driver;
-    public static String url = "https://saucelabs-sample-test-frameworks.github.io/training-test-page";
+    public static String url = "https://google.com";
 
     public static GuineaPigPage visitPage(WebDriver driver) {
         GuineaPigPage page = new GuineaPigPage(driver);
@@ -57,7 +57,7 @@ public class GuineaPigPage {
     }
 
     public boolean isOnPage() {
-        String title = "I am a page title - Sauce Labs";
+        String title = "title of page is:";
         return this.driver.getTitle() == title;
     }
 
